@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Set Your Reminder</h1>
+        <form>
+            <label for="day">Select Day:</label>
+            <select id="day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+            </select>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time">
+
+            <label for="activity">Select Activity:</label>
+            <select id="activity">
+                <option value="wake_up">Wake Up</option>
+                <option value="gym">Go to Gym</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="meetings">Meetings</option>
+                <option value="lunch">Lunch</option>
+                <option value="nap">Quick Nap</option>
+                <option value="library">Go to Library</option>
+                <option value="dinner">Dinner</option>
+                <option value="sleep">Go to Sleep</option>
+            </select>
+
+            <button type="button" onclick="setReminder()">Set Reminder</button>
+        </form>
+
+        
+        <div id="reminderMessage"></div>
+        <img id="reminderImage" src="" alt="" style="display:none; width: 200px; height: 200px; margin-top: 20px;">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
